@@ -46,6 +46,9 @@ public class Main {
                 ((existNumRomanian(numStrOne) == false) && (existNumRomanian(numStrTwo) == true))){
             throw new ScannerException("Вы ввели неправильный пример. " +
                     "\n Пример должен быть типа a + b.");
+        } else if (((existNumArab(numStrOne) == false) && (existNumArab(numStrTwo) == false)) ||
+                    ((existNumRomanian(numStrOne) == false) && (existNumRomanian(numStrTwo) == false))){
+            throw new ScannerException("Числа должны быть в пределах от 1 до 10 / от I до X.");
         }
       return null; 
     }
