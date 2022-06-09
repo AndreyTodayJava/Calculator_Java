@@ -47,7 +47,7 @@ public class Main {
             throw new ScannerException("Вы ввели неправильный пример. " +
                     "\n Пример должен быть типа a + b.");
         }
-      return null; //  исключение и завершение работы НУЖНО ДОПИСАТЬ
+      return null; 
     }
 
     static boolean existNumArab(String a) throws IllegalArgumentException { //проверка на принадлежность к арабским числам (попробовать из enum)
